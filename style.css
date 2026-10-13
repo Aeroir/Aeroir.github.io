@@ -20,7 +20,7 @@ header img {
   object-fit: cover;
 }
 
-nnav {
+nav {
   background-color: #34495e;
   display: flex;
   justify-content: space-between;
@@ -63,15 +63,6 @@ section {
   object-fit: cover;
 }
 
-/* --Specificity Challenge-- */
-/*The section selector above sets the background color for about me to white with a specificity of 0-0-1.*
-Now that I input a .highlight class, it overrides the background color of the about section to make it to a lighter yellow.
-The specificity of the .highlight class selecor is 0-0-10, so it will always win over the tag selector or a section selector here.*/
-.highlight {
-    background-color: #ffcc00;
-}
-/*Now, the #about selector is a ID selector, with a specificity of 1-0-0. The ID selectors will override the .highlight selector,
-as well as the section selector as well. It does not matter if I have either or both, the ID selector will always win in this case. However, there are other ways that override the ID selectors.*/
 #about {
     background-color: #ffffff;
 }
