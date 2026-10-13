@@ -5,19 +5,23 @@
     <title>Website Portfolio</title>
     <meta name ="description" content="Website Portfolio For Web Dev Class">
     <link rel="stylesheet" href="style.css" />   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
   <header>
-    <h1>Francisco Rodriguez</h1>
+    <h1>A Name</h1>
     <img src="assets/photo_1.jpeg" alt="My Portrait">
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#courses">Courses</a>
-    <a href="#Programming Experience">Programming Experience</a>
+    <div class="logo">A Name</div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#experience">Programming Experience</a>
+    </div>
   </nav>
 
   <main>
@@ -30,7 +34,7 @@
       </p>
     </section>
 
-    <section id="Courses">
+    <section id="courses">
       <h2>Courses:</h2>
       <table>
     <thead>
@@ -65,22 +69,20 @@
         <td>Fall 2025</td>
         <td>B+</td>
         </tr>
-        <tr>
 
         <tr>
         <td>Computer Architecture I(CSCI 160)</td>
         <td>Spring 2026</td>
         <td>A+</td>
         </tr>
-        <tr>
 
     </tbody>
 
     </table>
     </section>
 
+    <section id="experience ">
     <h3>
-    <section id="Programming Experience">
         Programming Languages I Have Experience In:
     </h3>
     <ul>
@@ -93,10 +95,22 @@
     </ul>
     </section>
     
+    <section id="projects">
+      <h2>Projects:</h2>
+      <div class="gallery">
+        <div class="card">
+          <img src="assets/project1.jpg" alt="Project 1">
+          <h3>Project One</h3>
+          <p>A short description.</p>
+        </div>
+        <!-- repeat for two or more cards -->
+      </div>
+    </section>
+
   </main>
     
   <footer>
-    <p> Francisco Rodriguez, 2026 | franciscorod768@gmail.com</p>
+    <p> Francisco Rodriguez, 2026 | franciscorod768@gmail.com </p>
   </footer>
 
 </body>

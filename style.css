@@ -20,15 +20,23 @@ header img {
   object-fit: cover;
 }
 
-nav {
+nnav {
   background-color: #34495e;
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 nav a {
   color: white;
-  margin: 10px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #2c3e50;
 }
 
 main {
@@ -43,14 +51,26 @@ section {
   border-radius: 8px;
 }
 
---Specificity Challenge--
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* --Specificity Challenge-- */
 /*The section selector above sets the background color for about me to white with a specificity of 0-0-1.*
 Now that I input a .highlight class, it overrides the background color of the about section to make it to a lighter yellow.
 The specificity of the .highlight class selecor is 0-0-10, so it will always win over the tag selector or a section selector here.*/
 .highlight {
     background-color: #ffcc00;
 }
-/*Now, the #about selector is a ID selector, with a specificity of 0-1-0. The ID selectors will override the .highlight selector,
+/*Now, the #about selector is a ID selector, with a specificity of 1-0-0. The ID selectors will override the .highlight selector,
 as well as the section selector as well. It does not matter if I have either or both, the ID selector will always win in this case. However, there are other ways that override the ID selectors.*/
 #about {
     background-color: #ffffff;
@@ -82,4 +102,27 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
 }
