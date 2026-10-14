@@ -1,1 +1,5 @@
+CSCI 39548: Practical Web Development HW #2 Reflection
 
+1. The difference between "flex-direction: row" and "flex-direction: column" is that they adjust the specific elements of the table in different alternating positions and directions. With "flex-direction: row", the elemenets are placed side by side, and can be moved either left or right. With flex-direction: column", the items are done in the opposite positions and directions. Therefore, the elements are placed on top of each other and can only be moved from up to down.
+
+2. Using relative units like percentage, vh, or rem allow for much more efficient and consistent font sizes. If giving any text a fixed pixel value, it won't adjust its size for whichever screen it is on. The way a website looks on a phone will look different and most likely poor if using a laptop to construct the website with fixed pixel values. Using relative units allows for the text to adjust its sizes depending on the screen, therefore making websites look much cleaner on all devices.
